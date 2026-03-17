@@ -1,0 +1,82 @@
+export const intents = {
+  greeting: [
+    "hei",
+    "moi",
+    "moikka",
+    "päivää",
+    "terve",
+  ],
+
+  positive: [
+    "hyvin",
+    "ihan hyvin",
+    "hyvin meni",
+    "menee hyvin",
+    "olen hyvällä tuulella",
+    "ihan hyvä päivä",
+    "päivä meni hyvin",
+    "kiitos hyvin",
+    "kaikki hyvin",
+    "olen iloinen",
+    "mukava päivä",
+  ],
+
+  neutral: [
+    "ihan tavallisesti",
+    "ihan normaalisti",
+    "ei mitään erityistä",
+    "tavallinen päivä",
+    "perus päivä",
+    "ok",
+    "ihan ok",
+    "no ihan",
+    "menettelee",
+  ],
+
+  loneliness: [
+    "yksinäinen",
+    "yksinäisyys",
+    "yksin",
+    "surullinen",
+    "ikävä",
+    "minulla on yksinäinen olo",
+    "olen yksin",
+  ],
+
+  low_mood: [
+    "väsynyt",
+    "olen väsynyt",
+    "väsyttää",
+    "huono päivä",
+    "paha päivä",
+    "rankka päivä",
+    "päivä oli raskas",
+    "raskas",
+    "masentaa",
+    "alakulo",
+    "ei jaksa",
+    "harmittaa",
+    "olen allapäin",
+    "paha olo",
+  ],
+
+  not_in_mood: [
+    "en halua puhua",
+    "ei huvita puhua",
+    "en jaksa puhua",
+    "en halua jutella",
+    "en ole puhetuulella",
+    "haluan olla yksin",
+    "jätetään tämä",
+    "en nyt halua keskustella",
+  ],
+
+  goodbye: [
+    "hei hei",
+    "moi moi",
+    "näkemiin",
+    "kiitos hei",
+    "hyvästi",
+    "päivänjatkoa",
+  ],
+};

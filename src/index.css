@@ -1,0 +1,252 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #1f2937;
+  background: #f3f6fb;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f6f8fc 0%, #edf3ff 100%);
+  color: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 48px 20px;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid #e6ebf4;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(31, 41, 55, 0.06);
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: 600;
+  color: #667085;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 44px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 0;
+  color: #475467;
+  font-size: 18px;
+  max-width: 680px;
+}
+
+.chat-wrapper {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #e6ebf4;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(31, 41, 55, 0.05);
+  margin-bottom: 24px;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 360px;
+  max-height: 520px;
+  overflow-y: auto;
+  padding: 8px;
+  margin-bottom: 18px;
+}
+
+.chat-message {
+  max-width: 75%;
+  padding: 14px 16px;
+  border-radius: 18px;
+  line-height: 1.5;
+  box-shadow: 0 6px 18px rgba(31, 41, 55, 0.05);
+}
+
+.user-message {
+  align-self: flex-end;
+  background: #1f2937;
+  color: white;
+  border-bottom-right-radius: 6px;
+}
+
+.assistant-message {
+  align-self: flex-start;
+  background: #f8fbff;
+  color: #1f2937;
+  border: 1px solid #e6ebf4;
+  border-bottom-left-radius: 6px;
+}
+
+.chat-role {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+  opacity: 0.75;
+}
+
+.input-section {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  padding: 16px 18px;
+  border: 1px solid #d8e0ec;
+  border-radius: 14px;
+  font-size: 16px;
+  background: #fff;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  border-color: #94a3b8;
+  box-shadow: 0 0 0 4px rgba(148, 163, 184, 0.15);
+}
+
+button {
+  padding: 16px 22px;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #1f2937;
+  color: white;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  opacity: 0.96;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e6ebf4;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(31, 41, 55, 0.04);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 22px;
+}
+
+.intent-badge {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.intent-badge.loneliness {
+  background: #fff1f2;
+  color: #be123c;
+}
+
+.intent-badge.confusion {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.intent-badge.silence {
+  background: #f4f4f5;
+  color: #3f3f46;
+}
+
+.intent-badge.goodbye {
+  background: #ecfeff;
+  color: #155e75;
+}
+
+.intent-badge.greeting {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.intent-badge.empty {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+.intent-badge.positive {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.intent-badge.neutral {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #475467;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .input-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chat-message {
+    max-width: 90%;
+  }
+}
