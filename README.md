@@ -4,9 +4,9 @@ A small full-stack conversational AI prototype exploring calm, safe and human-ce
 
 ## Screenshot
 
-![Safe Conversation Prototype screenshot](./screenshots/safe-conversation-prototype.png)
+![Safe Conversation Prototype screenshot](./screenshots/positive-dialog.png)
+![Safe Conversation Prototype screenshot](./screenshots/low-mood-dialog.png)
 ![Safe Conversation Prototype screenshot](./screenshots/safe-conversation-prototype1.png)
-
 
 ## Purpose
 
